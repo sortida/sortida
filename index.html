@@ -10,15 +10,27 @@
                 min-width: 640px;
             }
 
+            .header {
+                width:100%; 
+                background-image: url('header.jpg'); 
+                background-position: 50% 40%; 
+                border-bottom: 4px solid #3C6496;
+            }
+
             @media only screen and (max-width: 600px) {
                 iframe {
                     min-width: 340px;
                 }
+
+                .header {
+                    border-width-bottom: 2px;
+                }
             }
+
         </style>
     </head>
     <body>
-        <div style="width:100%; background-image: url('header.jpg'); background-position: 50% 40%; border-bottom: 4px solid #3C6496;">
+        <div class="header">
             <img style="max-width: 600px; height: auto; display:block; margin:auto;" src="sortida.svg" alt="sortida">
         </div>
 
