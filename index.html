@@ -7,7 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             iframe {
+                display:block; 
+                margin:auto; 
                 min-width: 640px;
+                min-height: 820px;
             }
 
             .header {
@@ -17,12 +20,25 @@
                 border-bottom: 4px solid #3C6496;
             }
 
+            .header img {
+                max-width: 600px; 
+                height: auto; 
+                display:block; 
+                margin:auto;
+            }
+
+            .content {
+                width:100%; 
+                margin-top: 10px;
+            }
+
             @media only screen and (max-width: 600px) {
                 iframe {
                     min-width: 340px;
                 }
 
                 .header {
+                    background-position: 50% 39%; 
                     border-bottom: 2px solid #3C6496;
                 }
             }
@@ -31,11 +47,11 @@
     </head>
     <body>
         <div class="header">
-            <img style="max-width: 600px; height: auto; display:block; margin:auto;" src="sortida.svg" alt="sortida">
+            <img src="sortida.svg" alt="sortida">
         </div>
 
-        <div style="width:100%; margin-top: 10px;">
-            <iframe style="display:block; margin:auto; width: auto; min-height: 820px;" src="https://docs.google.com/forms/d/e/1FAIpQLSd4jddJEQopn7aEcR_ODFPLMNeaRVelfo8ygqqziZSi6T8-Vw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="content">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4jddJEQopn7aEcR_ODFPLMNeaRVelfo8ygqqziZSi6T8-Vw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </body>
 </html>
